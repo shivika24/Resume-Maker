@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>resume-maker</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#d1").hide();
+    $("#p1").append(f1());
+  });
+});
+</script>
+</head>
+<body style="background-image:url('11.jpg');background-repeat: no-repeat; background-size:1300px 1300px; ">
+<center><h1 style="color:purple;">MY RESUME MAKER!!</h1></center>
+<div>
+	<center>
+<div id="d1" style="border: 2px solid; width:50%; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD5art8fpouxkotgTOFIf1Ew6AX3pS0IIh7R_0qNnusCcWD6gP&s');">
+  <div class="col-4">
+    <label><b>First Name</b></label>
+    <input type="text" class="form-control" id="fname"  placeholder="Enter First Name">
+  </div>
+  <div class="col-4">
+    <label><b>Last Name</b></label>
+    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name">
+  </div>
+  <div class="col-4">
+    <label><b>Phone Number</b></label>
+    <input type="text" class="form-control" id="pno" placeholder="Enter Phone Number" maxlength="10">
+  </div>
+    <div class="col-4">
+    <label><b>Address</b></label>
+    <textarea class="form-control" id="add" placeholder="Enter Address"></textarea>
+  </div>
+    <div class="col-4">
+    <label><b>E-mail Id</b></label>
+    <input type="email" class="form-control" id="email" placeholder="Enter E-mail Id">
+  </div>
+    <div class="col-4">
+    <label><b>LinkedIn</b></label>
+    <input type="text" class="form-control" id="linkedin" placeholder="Enter LinkedIn Id">
+  </div>
+    <div class="col-4">
+    <label><b>Github</b></label>
+    <input type="text" class="form-control" id="github" placeholder="Enter Github Id">
+  </div>
+    <div class="col-4">
+    <label><b>Experience</b></label>
+    <textarea class="form-control" id="exp" placeholder="Enter Experience"></textarea>
+  </div>
+  <div class="col-4">
+    <label><b>Certification</b></label>
+    <textarea class="form-control" id="cert" placeholder="Enter Certification"></textarea>
+  </div>
+  <div class="col-4">
+    <label><b>Projects</b></label>
+    <textarea class="form-control" id="proj" placeholder="Enter Projects"></textarea>
+  </div>
+    <div class="col-4">
+    <label><b>Skills</b></label>
+    <textarea class="form-control" id="skills" placeholder="Enter Skills"></textarea>
+  </div>
+    <div class="col-4">
+    <label><b>Education</b></label>
+    <textarea class="form-control" id="edu" placeholder="Enter Education"></textarea>
+  </div>
+  <div class="col-4">
+    <label><b>Interests</b></label>
+    <textarea class="form-control" id="interests" placeholder="Enter Your Interests"></textarea>
+  </div>
+  <br>
+  <div class="col-4">
+  <button type="submit" id="hide" class="btn btn-primary">Submit</button><br><br>
+</div>
+</div>
+</center>
+</div>
+<!--First Name:<input type="text" id="fname" placeholder="First Name"><br><br>
+Last Name:<input type="text" id="lname" placeholder="Last Name"><br><br>
+Phone Number:<input type="text" id="pno" placeholder="Phone Number"><br><br>
+Address:<textarea id="add" placeholder="Address" required></textarea><br><br>
+E-mail Id:<input type="email" id="email" placeholder="E-mail Id"><br><br>
+LinkedIn:<input type="text" id="linkedin" placeholder="LinkedIn"><br><br>
+Github:<input type="text" id="github" placeholder="Github"><br><br>
+Experience:<textarea id="exp" placeholder="Experience"></textarea><br><br>
+Certification:<textarea id="cert" placeholder="Certification"></textarea><br><br>
+Projects:<textarea id="proj" placeholder="Projects"></textarea><br><br>
+Skills:<textarea id="skills" placeholder="Skills"></textarea><br><br>
+Education:<textarea id="edu" placeholder="Education"></textarea><br><br>
+Interests:<textarea id="interests" placeholder="Interests"></textarea><br><br>
+<button id="hide">Submit</button>
+</div>-->
+
+<center><p id="p1" color="blue" style="border: 2px solid; width:50%; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD5art8fpouxkotgTOFIf1Ew6AX3pS0IIh7R_0qNnusCcWD6gP&s')"></p></center>
+
+<!--<p id="p2"><button onclick="f2()">PRINT</button></p>-->
+<script type="text/javascript">
+	function f1()
+	{
+		var a=document.getElementById("fname").value;
+		var b=document.getElementById("lname").value;
+		var c=document.getElementById("pno").value;
+		var d=document.getElementById("add").value;
+		var e=document.getElementById("email").value;
+		var f=document.getElementById("linkedin").value;
+		var g=document.getElementById("github").value;
+		var h=document.getElementById("exp").value;
+		var i=document.getElementById("cert").value;
+		var j=document.getElementById("proj").value;
+		var k=document.getElementById("skills").value;
+		var l=document.getElementById("edu").value;
+		var m=document.getElementById("interests").value;
+        document.getElementById("p1").innerHTML="<b>First Name:</b>"+a+"<br><br><b>Last Name:</b>"+b+"<br><br><b>Phone Number:</b>"+c+"<br><br><b>Address:</b>"+d+"<br><br><b>Email-Id:</b>"+e+"<br><br><b>LinkedIn:</b>"+f+"<br><br><b>Github:</b>"+g+"<br><br><b>Experience:</b>"+h+"<br><br><b>Certification:</b>"+i+"<br><br><b>Projects:</b>"+j+"<br><br><b>Skills:</b>"+k+"<br><br><b>Education:</b>"+l+"<br><br><b>Interests:</b>"+m+"<br><br>";
+        var but=document.createElement("button");
+        but.innerHTML="Print";
+        but.setAttribute("onclick","f2()");
+        but.setAttribute("class","btn btn-primary");
+        document.getElementById("p1").appendChild(but);
+
+	}
+	function f2()
+	{
+		window.print();
+	}
+</script>
+
+</body>
+</html>
